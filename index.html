@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Bài tập] Phối màu cho Newsletter - CodeGym</title>
+    <!-- Bootstrap CSS 5.3.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8fafc;
+            color: #1e293b;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+        .header-hero {
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+            color: #fff;
+            padding: 40px 20px;
+            border-bottom: 4px solid #0079BF;
+        }
+        .color-card {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+            border: 1px solid #e2e8f0;
+        }
+        .color-swatch {
+            height: 80px;
+            display: flex;
+            align-items: flex-end;
+            padding: 10px;
+            color: #fff;
+            font-weight: bold;
+            font-size: 13px;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.4);
+        }
+        .preview-iframe {
+            width: 100%;
+            height: 800px;
+            border: 1px solid #cbd5e1;
+            border-radius: 12px;
+            background: #fff;
+        }
+        .nav-pills .nav-link.active {
+            background-color: #0079BF;
+        }
+    </style>
+</head>
+<body>
+
+<header class="header-hero text-center">
+    <div class="container">
+        <span class="badge bg-primary px-3 py-2 text-uppercase mb-2">CodeGym UI/UX Practice</span>
+        <h1 class="fw-bold mb-3">Thực Hành Phối Màu Cho Newsletter</h1>
+        <p class="lead opacity-75 max-w-700 mx-auto" style="max-width: 750px;">
+            Ứng dụng công cụ <strong>Adobe Color</strong> để lựa chọn 2 bộ màu sắc hài hòa và áp dụng vào cấu trúc newsletter Bootstrap, tạo nên 2 phong cách thị giác và cảm xúc hoàn toàn khác biệt.
+        </p>
+        <div class="d-flex justify-content-center gap-2 mt-4">
+            <a href="newsletter_version1.html" class="btn btn-primary fw-semibold px-4 py-2" target="_blank">Mở Phiên Bản 1 (Tab mới) &nearr;</a>
+            <a href="newsletter_version2.html" class="btn btn-warning fw-semibold px-4 py-2 text-dark" target="_blank">Mở Phiên Bản 2 (Tab mới) &nearr;</a>
+        </div>
+    </div>
+</header>
+
+<main class="container py-5">
+    <!-- Phân tích bảng màu -->
+    <section class="mb-5">
+        <h2 class="fw-bold text-center mb-4">🎨 Phân Tích 2 Bộ Màu Chọn Từ Adobe Color</h2>
+        <div class="row g-4">
+            <!-- Phiên bản 1 -->
+            <div class="col-lg-6">
+                <div class="card h-100 color-card">
+                    <div class="card-header bg-white py-3 border-bottom">
+                        <span class="badge bg-primary me-2">Phiên bản 1</span>
+                        <h4 class="d-inline-block fw-bold mb-0">Trello Ocean Breeze (Năng Suất & Tin Cậy)</h4>
+                    </div>
+                    <div class="card-body">
+                        <p class="text-muted small mb-3">
+                            <strong>Quy tắc phối màu:</strong> Analogous + Complementary (Màu tương đồng kết hợp điểm nhấn bổ túc).<br>
+                            <strong>Cảm xúc mang lại:</strong> Chuyên nghiệp, ổn định, tăng khả năng tập trung và năng suất làm việc.
+                        </p>
+                        <div class="row g-2 mb-3">
+                            <div class="col-4">
+                                <div class="color-swatch" style="background-color: #0079BF;">#0079BF</div>
+                                <div class="p-2 small text-center bg-light"><strong>Primary</strong><br>Trello Blue</div>
+                            </div>
+                            <div class="col-4">
+                                <div class="color-swatch" style="background-color: #253858;">#253858</div>
+                                <div class="p-2 small text-center bg-light"><strong>Secondary</strong><br>Deep Slate</div>
+                            </div>
+                            <div class="col-4">
+                                <div class="color-swatch" style="background-color: #61BD4F;">#61BD4F</div>
+                                <div class="p-2 small text-center bg-light"><strong>Accent</strong><br>Growth Green</div>
+                            </div>
+                        </div>
+                        <ul class="list-group list-group-flush small">
+                            <li class="list-group-item d-flex justify-content-between"><span>Nền Header & Nút CTA Chính:</span> <strong>#0079BF</strong></li>
+                            <li class="list-group-item d-flex justify-content-between"><span>Nền Footer & Khối Tính Năng 1:</span> <strong>#253858</strong></li>
+                            <li class="list-group-item d-flex justify-content-between"><span>Khối Tính Năng 2 & Nút Đăng Ký:</span> <strong>#61BD4F</strong></li>
+                            <li class="list-group-item d-flex justify-content-between"><span>Nền Toàn Trang (Neutral BG):</span> <strong>#F4F5F7</strong></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Phiên bản 2 -->
+            <div class="col-lg-6">
+                <div class="card h-100 color-card">
+                    <div class="card-header bg-white py-3 border-bottom">
+                        <span class="badge bg-warning text-dark me-2">Phiên bản 2</span>
+                        <h4 class="d-inline-block fw-bold mb-0">Creative Sunset (Sáng Tạo & Nhiệt Huyết)</h4>
+                    </div>
+                    <div class="card-body">
+                        <p class="text-muted small mb-3">
+                            <strong>Quy tắc phối màu:</strong> Triad & Split-Complementary (Bộ ba màu kết hợp tương phản tách).<br>
+                            <strong>Cảm xúc mang lại:</strong> Năng động, khơi nguồn ý tưởng, đam mê và phá cách.
+                        </p>
+                        <div class="row g-2 mb-3">
+                            <div class="col-4">
+                                <div class="color-swatch" style="background-color: #7C3AED;">#7C3AED</div>
+                                <div class="p-2 small text-center bg-light"><strong>Primary</strong><br>Violet Purple</div>
+                            </div>
+                            <div class="col-4">
+                                <div class="color-swatch" style="background-color: #BE185D;">#BE185D</div>
+                                <div class="p-2 small text-center bg-light"><strong>Secondary</strong><br>Rose Berry</div>
+                            </div>
+                            <div class="col-4">
+                                <div class="color-swatch" style="background-color: #F59E0B;">#F59E0B</div>
+                                <div class="p-2 small text-center bg-light"><strong>Accent</strong><br>Sunset Amber</div>
+                            </div>
+                        </div>
+                        <ul class="list-group list-group-flush small">
+                            <li class="list-group-item d-flex justify-content-between"><span>Nền Header & Nút CTA Chính:</span> <strong>#7C3AED</strong></li>
+                            <li class="list-group-item d-flex justify-content-between"><span>Nền Footer & Khối Tính Năng 1:</span> <strong>#BE185D</strong></li>
+                            <li class="list-group-item d-flex justify-content-between"><span>Khối Tính Năng 2 & Nút Tham Gia:</span> <strong>#F59E0B</strong></li>
+                            <li class="list-group-item d-flex justify-content-between"><span>Nền Toàn Trang (Warm BG):</span> <strong>#FFFBEB</strong></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trình xem trước Newsletter -->
+    <section>
+        <div class="d-flex flex-wrap justify-content-between align-items-center mb-3">
+            <h2 class="fw-bold mb-2">👁️ Trực Quan So Sánh 2 Bản Tin</h2>
+            <ul class="nav nav-pills" id="newsletterTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active fw-medium" id="side-by-side-tab" data-bs-toggle="pill" data-bs-target="#side-by-side" type="button" role="tab">So sánh song song (Side-by-side)</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link fw-medium" id="v1-tab" data-bs-toggle="pill" data-bs-target="#v1" type="button" role="tab">Chỉ xem Bản 1</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link fw-medium" id="v2-tab" data-bs-toggle="pill" data-bs-target="#v2" type="button" role="tab">Chỉ xem Bản 2</button>
+                </li>
+            </ul>
+        </div>
+
+        <div class="tab-content" id="newsletterTabsContent">
+            <!-- Tab Side by Side -->
+            <div class="tab-pane fade show active" id="side-by-side" role="tabpanel">
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <div class="p-2 bg-light border rounded-3 mb-2 text-center fw-bold text-primary">
+                            Bản 1: Trello Ocean Breeze (#0079BF / #61BD4F)
+                        </div>
+                        <iframe src="newsletter_version1.html" class="preview-iframe" title="Phiên bản 1"></iframe>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="p-2 bg-light border rounded-3 mb-2 text-center fw-bold text-purple" style="color: #7C3AED;">
+                            Bản 2: Creative Sunset Energy (#7C3AED / #F59E0B)
+                        </div>
+                        <iframe src="newsletter_version2.html" class="preview-iframe" title="Phiên bản 2"></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab V1 -->
+            <div class="tab-pane fade" id="v1" role="tabpanel">
+                <iframe src="newsletter_version1.html" class="preview-iframe" style="height: 900px;" title="Phiên bản 1 toàn màn hình"></iframe>
+            </div>
+
+            <!-- Tab V2 -->
+            <div class="tab-pane fade" id="v2" role="tabpanel">
+                <iframe src="newsletter_version2.html" class="preview-iframe" style="height: 900px;" title="Phiên bản 2 toàn màn hình"></iframe>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="bg-dark text-white text-center py-4 mt-5">
+    <div class="container">
+        <p class="mb-1">&copy; 2026 CodeGym Assignment - Phối màu cho Newsletter</p>
+        <p class="small text-muted mb-0">Thực hiện bởi học viên Hồ Quang Huy (DTC245200862)</p>
+    </div>
+</footer>
+
+<!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

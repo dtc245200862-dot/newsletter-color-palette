@@ -1,0 +1,96 @@
+/* ========================================================
+   Version 1: Trello Productivity / Ocean Breeze
+   Quy tắc phối màu: Analogous + Complementary (Adobe Color)
+   Phong cách: Chuyên nghiệp, tập trung, tin cậy, năng suất
+   ======================================================== */
+:root {
+    --primary-color: #0079BF;         /* Xanh Trello Blue */
+    --darker-primary-color: #026AA7;  /* Xanh đậm khi hover */
+    --secondary-color: #253858;       /* Xanh than Slate */
+    --accent-color: #61BD4F;          /* Xanh lá Growth Green */
+    --accent-hover: #519839;
+    --light-bg-color: #F4F5F7;        /* Nền xám nhẹ Atlassian */
+    --card-bg: #FFFFFF;
+    --text-color: #172B4D;           /* Chữ xanh đen tương phản cao */
+    --text-muted: #5E6C84;
+}
+
+body {
+    background-color: var(--light-bg-color);
+    color: var(--text-color);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+.newsletter-box {
+    max-width: 680px;
+    margin: 30px auto;
+    background: var(--card-bg);
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(9, 30, 66, 0.12);
+    overflow: hidden;
+}
+
+.primary-bg {
+    background-color: var(--primary-color) !important;
+}
+
+.secondary-bg {
+    background-color: var(--secondary-color) !important;
+}
+
+.accent-bg {
+    background-color: var(--accent-color) !important;
+}
+
+.text-primary-color {
+    color: var(--primary-color) !important;
+}
+
+.text-secondary-color {
+    color: var(--secondary-color) !important;
+}
+
+.text-accent-color {
+    color: var(--accent-color) !important;
+}
+
+.btn-primary-custom {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border: 1px solid var(--primary-color);
+    padding: 10px 24px;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: all 0.25s ease;
+}
+
+.btn-primary-custom:hover {
+    background-color: var(--darker-primary-color);
+    border-color: var(--darker-primary-color);
+    color: #ffffff;
+}
+
+.btn-accent-custom {
+    background-color: var(--accent-color);
+    color: #ffffff;
+    border: 1px solid var(--accent-color);
+    padding: 8px 20px;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: all 0.25s ease;
+}
+
+.btn-accent-custom:hover {
+    background-color: var(--accent-hover);
+    border-color: var(--accent-hover);
+    color: #ffffff;
+}
+
+.badge-tag {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    display: inline-block;
+}
